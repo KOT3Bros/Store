@@ -1,0 +1,168 @@
+.registration {
+    display: flex;
+    gap: 128px;
+    padding-top: 64px;
+    padding-bottom: 96px;
+}
+
+.registration-form {
+    width: 360px;
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__heading {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #222222;
+    }
+
+    &__input {
+        width: 360px;
+        height: 45px;
+        box-sizing: border-box;
+        border: 1px solid #A4A4A4;
+        outline: none;
+        padding-left: 17px;
+        padding-right: 17px;
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 16px;
+        color: #222;
+
+        &::placeholder {
+            color: #B1B1B1;
+        }
+    }
+
+    &__radio {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 13px;
+        color: #000000;
+
+        & input[type=radio] {
+            width: 17px;
+            height: 17px;
+        }
+    }
+
+    &__text {
+        padding-top: 15px;
+        padding-bottom: 39px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 16px;
+        color: #B1B1B1;
+    }
+
+    &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        width: 167px;
+        height: 50px;
+        border: 1px solid #F16D7F;
+        background-color: #FFF;
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #F16D7F;
+
+        &:hover {
+            background-color: #F16D7F;
+            color: #FFF;
+        }
+
+        &:hover path {
+            fill: #FFF;
+        }
+    }
+}
+
+.registration-description {
+    &__text {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+        padding-bottom: 22px;
+    }
+
+    &__ul {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        list-style-image: url(img/li-marker.svg);
+        padding-left: 27px;
+    }
+
+    &__li {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+        padding-left: 15px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .registration {
+        gap: 22px;
+        padding-top: 40px;
+    }
+
+    .registration-description {
+        &__text {
+            font-size: 16px;
+            line-height: 19px;
+            
+            &_heading {
+                padding-bottom: 32px;
+            }
+        }
+
+        &__li {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .breadcrumbs_registration {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .registration {
+        margin-left: calc(50% - 187.5px);
+        margin-right: calc(50% - 187.5px);
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .registration-description {
+        width: 359px;
+    }
+}
